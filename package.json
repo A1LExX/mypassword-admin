@@ -10,18 +10,20 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@babel/runtime": "latest",
+    "@douyinfe/semi-icons": "latest",
+    "@douyinfe/semi-icons-lab": "latest",
+    "@douyinfe/semi-ui": "latest",
     "@tauri-apps/api": "^1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0",
-    "@babel/runtime": "latest",
-    "@douyinfe/semi-ui": "latest",
-    "@douyinfe/semi-icons": "latest",
-    "@douyinfe/semi-icons-lab": "latest"
+    "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
+    "@actions/github": "^6.0.0",
     "@tauri-apps/cli": "^1",
     "@vitejs/plugin-react": "^4.2.1",
+    "node-fetch": "^3.3.2",
     "sass": "^1.75.0",
     "vite": "^5.0.0"
   }
