@@ -24,7 +24,7 @@ const About =()=>{
                 Scientists have figured out some rules for how those tiny pieces
                 behave, but they're really different from the rules we're used to in
                 our everyday life. For example, sometimes a tiny piece can be in two
-                different places at the same time! It's like if you could be both in
+                different places at the same time! Ie if you could be both in
                 your bedroom and in the kitchen at the same time! Scientists are
                 still learning about quantum mechanics and trying to figure out all
                 the strange things that can happen on that tiny scale.
