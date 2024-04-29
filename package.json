@@ -1,14 +1,14 @@
 {
   "name": "mypassword-admin",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "updater":"node scripts/updater.mjs",
+    "updater": "node scripts/updater.mjs",
     "release": "node scripts/release.mjs"
   },
   "dependencies": {
