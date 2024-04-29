@@ -1,0 +1,350 @@
+.rootActivities {
+    align-items: center;
+    background: var(--semi-color-bg-0);
+    flex-direction: column;
+    height: 1042px;
+    overflow: hidden;
+    row-gap: 0;
+    width: 1440px;
+    display: flex;
+    color: var(--semi-color-text-0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    line-height: 28px;
+    text-align: left;
+  
+    .nav {
+      align-self: stretch;
+      height: 60px;
+  
+      .navigationHeaderLogo {
+        align-items: flex-start;
+        column-gap: 0;
+        display: inline-flex;
+        flex-shrink: 0;
+  
+        .semiIconsSemiLogo {
+          font-size: 36px;
+          color: var(--semi-color-text-0);
+        }
+      }
+  
+      .dIV {
+        align-items: center;
+        column-gap: 16px;
+        display: inline-flex;
+        flex-shrink: 0;
+  
+        .semiIconsFeishuLogo,
+        .semiIconsHelpCircle,
+        .semiIconsBell {
+          font-size: 20px;
+          color: var(--semi-color-text-2);
+        }
+  
+        .avatar {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+  
+    .main {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: 942px;
+      padding: 40px 0px 0px;
+      row-gap: 10px;
+      align-self: stretch;
+  
+      .content {
+        align-items: flex-start;
+        column-gap: 80px;
+        display: inline-flex;
+        flex-shrink: 0;
+  
+        .left {
+          align-items: flex-start;
+          display: inline-flex;
+          flex-direction: column;
+          row-gap: 40px;
+          flex-shrink: 0;
+  
+          & > .meegoSharedWebMainDy {
+            min-width: 110px;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+  
+          .frame1321317591,
+          .frame1321317590 {
+            align-items: flex-start;
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 24px;
+            flex-shrink: 0;
+            line-height: 24px;
+  
+            .meegoSharedWebMainDy {
+              font-size: 20px;
+              font-weight: 700;
+              letter-spacing: 0.4px;
+              min-width: 69px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+  
+            .rollbackToNodeUNREVI {
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: -0.14px;
+              vertical-align: top;
+              width: 588px;
+              flex-shrink: 0;
+            }
+          }
+        }
+  
+        .right {
+          align-items: flex-start;
+          background: var(--semi-color-bg-1);
+          border-color: var(--semi-color-border);
+          border-radius: 12px;
+          border-style: solid;
+          border-width: 1px;
+          display: inline-flex;
+          flex-direction: column;
+          padding: 23px;
+          row-gap: 24px;
+          flex-shrink: 0;
+          font-family: "PingFang SC";
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.36px;
+          line-height: 24px;
+  
+          .frame18250 {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            height: 32px;
+            padding: 0px 258px 0px 0px;
+            flex-shrink: 0;
+  
+            .frame18246 {
+              align-items: center;
+              flex-direction: row;
+              height: 32px;
+              justify-content: space-between;
+              padding: 0px 52px 0px 0px;
+              width: 118px;
+              display: flex;
+  
+              .frame {
+                height: 32px;
+                overflow: hidden;
+                width: 32px;
+                position: relative;
+  
+                .group2860 {
+                  align-items: center;
+                  bottom: 0;
+                  display: flex;
+                  flex-direction: row;
+                  height: 32px;
+                  right: 0;
+                  position: absolute;
+  
+                  .buttonOnlyIconSecond {
+                    background: #f6d86fff;
+                    border-radius: 32px;
+                    height: 32px;
+                    overflow: hidden;
+                    width: 32px;
+                  }
+                }
+  
+                .iconAnnounceFilled {
+                  height: 16px;
+                  left: 8px;
+                  top: 8px;
+                  width: 16px;
+                  position: absolute;
+                }
+              }
+  
+              .meegoSharedWebMainDy {
+                vertical-align: top;
+                min-width: 74px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .timelineItem {
+    height: 86px;
+    position: relative;
+    width: 440px;
+    color: var(--semi-color-text-0);
+    font-family: "PingFang SC";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    text-align: left;
+  
+    .frame1321315760 {
+      align-items: center;
+      column-gap: 16px;
+      display: inline-flex;
+      flex-shrink: 0;
+  
+      .frame1321315759 {
+        align-items: center;
+        column-gap: 4px;
+        display: inline-flex;
+        flex-shrink: 0;
+  
+        .zhangFanUNREVISED {
+          min-width: 73px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+  
+        .rollbackToNodeUNREVI {
+          min-width: 112px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+  
+        .inTheDesignUNREVISED {
+          min-width: 90px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+  
+  .timelineItem2,
+  .timelineItem3,
+  .timelineItem4,
+  .timelineItem5,
+  .timelineItem6 {
+    height: 110px;
+    position: relative;
+    width: 440px;
+    color: var(--semi-color-text-0);
+    font-family: "PingFang SC";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    text-align: left;
+  
+    .frame1321315760 {
+      align-items: center;
+      column-gap: 16px;
+      display: inline-flex;
+      flex-shrink: 0;
+  
+      .frame1321315759 {
+        align-items: center;
+        column-gap: 4px;
+        display: inline-flex;
+        flex-shrink: 0;
+  
+        .zhangFanUNREVISED {
+          min-width: 73px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+  
+        .rollbackToNodeUNREVI {
+          min-width: 112px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+  
+        .inTheDesignUNREVISED {
+          min-width: 90px;
+          vertical-align: top;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+  
+  .timelineItem1 {
+    height: 120px;
+    position: relative;
+    width: 440px;
+    color: var(--semi-color-text-0);
+    font-family: "PingFang SC";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    text-align: left;
+  
+    .frame1321315776 {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-self: stretch;
+  
+      .frame1321315760 {
+        align-items: center;
+        column-gap: 16px;
+        display: inline-flex;
+  
+        .frame1321315759 {
+          align-items: center;
+          column-gap: 4px;
+          display: inline-flex;
+          flex-shrink: 0;
+  
+          .zhangFanUNREVISED {
+            min-width: 73px;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+  
+          .iUrgedYouPleaseCompl {
+            min-width: 338px;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+        }
+      }
+  
+      .frame1321315761 {
+        align-items: center;
+        column-gap: 16px;
+        margin: 2px 0px 0px;
+        display: inline-flex;
+  
+        .frame1321315759 {
+          align-items: center;
+          column-gap: 4px;
+          display: inline-flex;
+          flex-shrink: 0;
+  
+          .designAcceptanceUNRE {
+            min-width: 132px;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+  

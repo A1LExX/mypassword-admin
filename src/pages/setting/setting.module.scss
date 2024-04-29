@@ -1,0 +1,199 @@
+.rootSettings {
+  align-items: center;
+  background: var(--semi-color-bg-0);
+  flex-direction: column;
+  height: 1042px;
+  overflow: hidden;
+  row-gap: 0;
+  width: 1440px;
+  display: flex;
+  color: var(--semi-color-text-0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 28px;
+  text-align: left;
+
+  .nav {
+    align-self: stretch;
+    height: 60px;
+
+    .navigationHeaderLogo {
+      align-items: flex-start;
+      column-gap: 0;
+      display: inline-flex;
+      flex-shrink: 0;
+
+      .semiIconsSemiLogo {
+        font-size: 36px;
+        color: var(--semi-color-text-0);
+      }
+    }
+
+    .dIV {
+      align-items: center;
+      column-gap: 16px;
+      display: inline-flex;
+      flex-shrink: 0;
+
+      .semiIconsFeishuLogo,
+      .semiIconsHelpCircle,
+      .semiIconsBell {
+        font-size: 20px;
+        color: var(--semi-color-text-2);
+      }
+
+      .avatar {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+
+  .main {
+    align-items: center;
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 48px 0px 0px 64px;
+    row-gap: 10px;
+    align-self: stretch;
+
+    & > .content {
+      align-items: flex-start;
+      display: inline-flex;
+      flex-direction: column;
+      row-gap: 10px;
+      flex-shrink: 0;
+
+      .item {
+        min-width: 77px;
+        vertical-align: middle;
+        flex-shrink: 0;
+      }
+
+      .content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 918px;
+        flex-shrink: 0;
+        font-size: 14px;
+        letter-spacing: -0.14px;
+        line-height: 20px;
+
+        .frame1312316546 {
+          align-items: flex-start;
+          column-gap: 92px;
+          display: inline-flex;
+          flex-shrink: 0;
+
+          .frame1312316543 {
+            align-items: flex-start;
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 4px;
+            flex-shrink: 0;
+
+            .label {
+              color: var(--semi-color-text-0);
+              font-weight: 600;
+              min-width: 123px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+
+            .label1 {
+              color: var(--semi-color-text-2);
+              font-weight: 400;
+              min-width: 399px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+          }
+        }
+
+        .frame1312316547 {
+          align-items: flex-start;
+          column-gap: 218px;
+          display: inline-flex;
+          flex-shrink: 0;
+
+          .frame1312316544 {
+            align-items: flex-start;
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 4px;
+            flex-shrink: 0;
+
+            .label {
+              color: var(--semi-color-text-0);
+              font-weight: 600;
+              min-width: 73px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+
+            .label1 {
+              color: var(--semi-color-text-2);
+              font-weight: 400;
+              min-width: 268px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+          }
+        }
+
+        .frame1312316548 {
+          align-items: flex-start;
+          column-gap: 224px;
+          display: inline-flex;
+          flex-shrink: 0;
+
+          .frame1312316545 {
+            align-items: flex-start;
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 4px;
+            flex-shrink: 0;
+
+            .label {
+              color: var(--semi-color-text-0);
+              font-weight: 600;
+              min-width: 72px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+
+            .label1 {
+              color: var(--semi-color-text-2);
+              font-weight: 400;
+              min-width: 262px;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+          }
+        }
+
+        .line2,
+        .line3 {
+          flex-shrink: 0;
+          height: 0;
+          align-self: stretch;
+        }
+      }
+    }
+  }
+}
+
+.checkbox,
+.checkbox1 {
+  height: 64px;
+}
+
+.radio {
+  height: 40px;
+}
