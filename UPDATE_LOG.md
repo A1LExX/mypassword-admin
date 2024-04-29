@@ -1,8 +1,8 @@
 # Updater Log
 
-## v0.1.5
+## v0.1.6
 
-feat: updater
+测试更新
 
 ## v0.0.3
 
