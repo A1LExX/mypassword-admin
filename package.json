@@ -1,7 +1,7 @@
 {
   "name": "mypassword-admin",
   "private": true,
-  "version": "0.1.9",
+  "version": "0.1.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,6 +28,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "node-fetch": "^3.3.2",
     "sass": "^1.75.0",
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "vite-plugin-top-level-await": "^1.4.1"
   }
 }
