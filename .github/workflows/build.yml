@@ -19,7 +19,7 @@ jobs:
         shell: bash
         run: |
           echo "using version tag ${GITHUB_REF:10}"
-          echo ::set-output name=version::"${GITHUB_REF:10}"
+          echo "version::"${GITHUB_REF:10}" >> $GITHUB_OUTPUT
  
       - name: Create Release
         id: create_release
@@ -45,7 +45,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: 20
  
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
@@ -72,7 +72,7 @@ jobs:
  
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+        run: echo "dir::$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
  
       - name: Yarn cache
         uses: actions/cache@v2
