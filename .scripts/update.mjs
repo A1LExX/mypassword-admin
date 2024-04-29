@@ -21,7 +21,6 @@ const updateData = {
     win64: { signature: '', url: '' },
     linux: { signature: '', url: '' },
     darwin: { signature: '', url: '' },
-    'linux-x86_64': { signature: '', url: '' },
     'windows-x86_64': { signature: '', url: '' }
   }
 };
