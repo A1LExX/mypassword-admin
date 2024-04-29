@@ -135,7 +135,7 @@
         "installerArgs": []
       },
       "endpoints": [
-        ""
+        "https://a1lexx.github.io/mypassword-admin/install.json"
       ]
     },
     "bundle": {
