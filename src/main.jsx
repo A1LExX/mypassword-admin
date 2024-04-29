@@ -4,6 +4,8 @@ import Login from "./pages/login/login";
 import Main from "./pages/main/main";
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import './main.css'
+import { invoke } from "@tauri-apps/api";
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
