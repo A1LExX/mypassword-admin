@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "AlextecPassword-admin",
-    "version": "0.0.3"
+    "version": "0.1.4"
   },
   "tauri": {
     "allowlist": {
@@ -135,7 +135,7 @@
         "installerArgs": []
       },
       "endpoints": [
-        "https://github.com/A1LExX/mypassword-admin/release/download/v1.0.8/latest.json"
+        ""
       ]
     },
     "bundle": {
