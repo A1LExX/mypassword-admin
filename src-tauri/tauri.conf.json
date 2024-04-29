@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "Alextec密码管理器",
+    "productName": "AlextecPassword-admin",
     "version": "0.0.3"
   },
   "tauri": {

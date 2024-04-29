@@ -19,7 +19,7 @@ jobs:
         shell: bash
         run: |
           echo "using version tag ${GITHUB_REF:10}"
-          echo "version::"${GITHUB_REF:10}" >> $GITHUB_OUTPUT
+          echo "{version}::"${GITHUB_REF:10}" >> $GITHUB_OUTPUT
  
       - name: Create Release
         id: create_release
@@ -67,12 +67,9 @@ jobs:
           # Optional version of wasm-pack to install(eg. 'v0.9.1', 'latest')
           version: v0.9.1
  
-      - name: Install rsw
-        run: cargo install rsw
- 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
-        run: echo "dir::$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+        run: echo "{dir}::$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
  
       - name: Yarn cache
         uses: actions/cache@v2
