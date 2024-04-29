@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "AlextecPassword-admin",
-    "version": "0.1.4"
+    "version": "0.1.9"
   },
   "tauri": {
     "allowlist": {
@@ -131,8 +131,7 @@
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEM0OUI4NzczNEYwRjlFNjAKUldSZ25nOVBjNGVieE9qNk1SVHgxeEZYUjRsYkh2N0FnWE03NFVqd1pDRTg2eHN2WjZtYVMzK2wK",
       "windows": {
-        "installMode": "passive",
-        "installerArgs": []
+        "installMode": "basicUi"
       },
       "endpoints": [
         "https://a1lexx.github.io/mypassword-admin/install.json"
