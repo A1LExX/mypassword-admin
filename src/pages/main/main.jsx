@@ -7,6 +7,8 @@ import MainPassword from "../mainPassword/mainPassword";
 import Setting from "../setting/setting";
 import Subhome from "../subhome/subhone";
 import { IconSemiLogo } from '@douyinfe/semi-icons';
+import { getVersion } from '@tauri-apps/api/app';
+const appVersion = await getVersion();
 import { IconChangelog, IconCard, IconConfig, IconTreeSelect, IconForm, IconBreadcrumb, IconBanner, IconBadge, IconNotification, IconSteps, IconTree, IconTabs, IconNavigation } from '@douyinfe/semi-icons-lab';
 
 
@@ -47,7 +49,7 @@ function Layout() {
         mode={'horizontal'}
         header={{
           logo: <IconSemiLogo style={{ height: '36px', fontSize: 36 }} />,
-          text: 'Alextec密码管理器'
+          text: 'Alextec密码管理器'+ appVersion
         }}
         renderWrapper={({ itemElement, isSubNav, isInSubNav, props }) => {
           const routerMap = {

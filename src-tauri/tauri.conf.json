@@ -7,20 +7,20 @@
   },
   "package": {
     "productName": "AlextecPassword-admin",
-    "version": "0.1.9"
+    "version": "0.1.11"
   },
   "tauri": {
     "allowlist": {
       "all": false,
       "app": {
-        "all": false,
+        "all": true,
         "hide": false,
         "show": false
       },
       "clipboard": {
-        "all": false,
-        "readText": false,
-        "writeText": false
+        "all": true,
+        "readText": true,
+        "writeText": true
       },
       "dialog": {
         "all": false,
