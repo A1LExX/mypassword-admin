@@ -1,9 +1,6 @@
 # Updater Log
 
-## v0.1.14
+## v0.1.15
 
-测试更新0.1.9
-
-## v0.0.3
-
-Development toolbox, and more...
+1.增加了对于x64平台的macos系统的支持，最低版本macos11
+2.增加了国内软件更新源，使得软件更新更快
