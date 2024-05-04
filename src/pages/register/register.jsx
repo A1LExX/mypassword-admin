@@ -1,10 +1,10 @@
 import React, { useCallback } from "react";
 import { Form, Checkbox, Button, Banner } from '@douyinfe/semi-ui';
-import styles from './login.module.scss';
+import styles from './register.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { LoginNotification } from "../../notif/LoginMessage";
 
-const Component = () => {
+const Register = () => {
     const navigate = useNavigate();
     function handleOnClickPresetting() {
         //LoginNotification();
@@ -27,7 +27,7 @@ const Component = () => {
                         <div className={styles.header}>
                             <p className={styles.title}>欢迎回来</p>
                             <p className={styles.text}>
-                                <span className={styles.text}>登录</span>
+                                <span className={styles.text}>登录11111111111111111111</span>
                                 <span className={styles.text1}> AlextecPasswordManager </span>
                                 <span className={styles.text2}>账户</span>
                             </p>
@@ -51,8 +51,8 @@ const Component = () => {
                             />
                         </Form>
                         <div className={styles.check11}>
-                            <Checkbox type="default">记住我</Checkbox>
-                            <div className={styles.a} onClick={()=> handleOnClickRegister()}>没有账号?点我注册!</div>
+                            <Checkbox type="default">记住密码</Checkbox>
+                            <a className={styles.a} onClick={()=> handleOnClickRegister()}>没有账号?点我注册!</a>
                         </div>
 
                         <Button theme="solid" className={styles.button} onClick={() => handleOnClickPresetting()}>
@@ -66,4 +66,4 @@ const Component = () => {
 
 }
 
-export default Component;
+export default Register;
