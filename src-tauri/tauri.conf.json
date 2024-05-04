@@ -72,7 +72,7 @@
         "assetScope": []
       },
       "shell": {
-        "all": false,
+        "all": true,
         "execute": false,
         "open": ".*",
         "scope": [],

@@ -3,6 +3,7 @@ import { Form, Checkbox, Button, Banner } from '@douyinfe/semi-ui';
 import styles from './register.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { LoginNotification } from "../../notif/LoginMessage";
+import { open } from "@tauri-apps/api/shell";
 
 const Register = () => {
     const navigate = useNavigate();
@@ -11,9 +12,12 @@ const Register = () => {
         return navigate('/Main', { replace: true }), [navigate];
     }
 
-    function handleOnClickRegister() {
+    function handleOnClickBackLogin() {
         //LoginNotification();
-        return navigate('/Register', { replace: true }), [navigate];
+        return navigate('/Login', { replace: true }), [navigate];
+    }
+    function copyrightLink(){
+        open("https://alextec.icu")
     }
     return (
         <div className={styles.rootSignupLogins}>
@@ -25,11 +29,9 @@ const Register = () => {
                             className={styles.logo}
                         />
                         <div className={styles.header}>
-                            <p className={styles.title}>欢迎回来</p>
+                            <p className={styles.title}>用户注册</p>
                             <p className={styles.text}>
-                                <span className={styles.text}>登录11111111111111111111</span>
                                 <span className={styles.text1}> AlextecPasswordManager </span>
-                                <span className={styles.text2}>账户</span>
                             </p>
                         </div>
                     </div>
@@ -43,24 +45,39 @@ const Register = () => {
                                 fieldStyle={{ alignSelf: "stretch", padding: 0 }}
                             />
                             <Form.Input
+                                label={{ text: "邮箱" }}
+                                field="input"
+                                placeholder="输入邮箱"
+                                style={{ width: "100%" }}
+                                fieldStyle={{ alignSelf: "stretch", padding: 0 }}
+                            />
+                            <Form.Input
                                 label={{ text: "密码" }}
                                 field="field1"
                                 placeholder="输入密码"
                                 style={{ width: "100%" }}
                                 fieldStyle={{ alignSelf: "stretch", padding: 0 }}
                             />
+                            <Form.Input
+                                label={{ text: "确认密码" }}
+                                field="field1"
+                                placeholder="确认密码"
+                                style={{ width: "100%" }}
+                                fieldStyle={{ alignSelf: "stretch", padding: 0 }}
+                            />
                         </Form>
-                        <div className={styles.check11}>
-                            <Checkbox type="default">记住密码</Checkbox>
-                            <a className={styles.a} onClick={()=> handleOnClickRegister()}>没有账号?点我注册!</a>
-                        </div>
 
-                        <Button theme="solid" className={styles.button} onClick={() => handleOnClickPresetting()}>
-                            登录
+                        <Button theme="solid" className={styles.button} >
+                            注册
+                        </Button>
+                        <Button theme="solid" className={styles.button} onClick={() => handleOnClickBackLogin()}>
+                            返回登录
                         </Button>
                     </div>
                 </div>
             </div>
+            <div className={styles.copyright} onClick={() => copyrightLink()}>©2024 Alextec.icu</div>
+            <br />
         </div>
     );
 

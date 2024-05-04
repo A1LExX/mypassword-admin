@@ -3,6 +3,8 @@ import { Form, Checkbox, Button, Banner } from '@douyinfe/semi-ui';
 import styles from './login.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { LoginNotification } from "../../notif/LoginMessage";
+import { open } from "@tauri-apps/api/shell";
+import { Notused } from "../../notif/notused";
 
 const Component = () => {
     const navigate = useNavigate();
@@ -15,6 +17,15 @@ const Component = () => {
         //LoginNotification();
         return navigate('/Register', { replace: true }), [navigate];
     }
+
+    function copyrightLink(){
+        open("https://alextec.icu")
+    }
+
+    function notused(){
+        Notused();
+    }
+
     return (
         <div className={styles.rootSignupLogins}>
             <div className={styles.main}>
@@ -51,7 +62,7 @@ const Component = () => {
                             />
                         </Form>
                         <div className={styles.check11}>
-                            <Checkbox type="default">记住我</Checkbox>
+                            <Checkbox type="default" onChange={()=> notused()}>记住我</Checkbox>
                             <div className={styles.a} onClick={()=> handleOnClickRegister()}>没有账号?点我注册!</div>
                         </div>
 
@@ -61,6 +72,8 @@ const Component = () => {
                     </div>
                 </div>
             </div>
+            <div className={styles.copyright} onClick={() => copyrightLink()}>©2024 Alextec.icu</div>
+            <br />
         </div>
     );
 

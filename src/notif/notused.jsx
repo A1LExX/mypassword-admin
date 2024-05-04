@@ -1,9 +1,9 @@
 import { Notification } from "@douyinfe/semi-ui";
 
-export function LoginNotification(){
+export function Notused(){
 
         let opts = {
-            content: '用户名或密码未输入',
+            content: '此功能尚未启用',
             duration: 3,
             theme: 'light',
         }

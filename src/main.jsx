@@ -15,6 +15,7 @@ root.render(
             <Route index element={<Login />} />
             <Route path="main/*" element={<Main />} />
             <Route path="/register" element={<Register />}></Route>
+            <Route path="/Login" element={<Login />}></Route>
         </Routes>
     </BrowserRouter>
 )
