@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Avatar, Select, DatePicker, Table, Button } from '@douyinfe/semi-ui';
 import { IconSemiLogo, IconFeishuLogo, IconHelpCircle, IconBell, IconClear, IconMore } from '@douyinfe/semi-icons';
 import styles from './mainpassword.module.scss';
+import { BackTop } from '@douyinfe/semi-ui';
 
 const MainPassword = () => {
     return (
