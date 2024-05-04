@@ -1,0 +1,35 @@
+{
+  "version": "v0.1.19",
+  "notes": "登录注册实装！",
+  "pub_date": "2024-05-04T13:20:11.006Z",
+  "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ25nOVBjNGVieEZqL2JvM2x3ZFozWml4LzBabWRpd01XcDJOWmZHM2hzTmJ6QzdHK003aDd0ZEVJMlpISjM0ZkpOaWlZWjhkNFh3Ky9wMVVaR2c5UjA0US9VZFlkNUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0ODI4NzYyCWZpbGU6QWxleHRlY1Bhc3N3b3JkLWFkbWluXzAuMS4xOV94NjRfemgtQ04ubXNpLnppcApnVDI2N3JXU2EwaHRhcmk3aHByeTdiSXVxRDFTTC9BMGp6TDQ0eTlOL0NCMjNhU1dOdUxRNWhoS1c4WkZVU0RZMEpEeEUvdzNPKzUxYWRsSVRRTWREdz09Cg==",
+      "url": "https://github.com/A1LExX/mypassword-admin/releases/download/v0.1.19/AlextecPassword-admin_0.1.19_x64_zh-CN.msi.zip"
+    },
+    "linux": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin-aarch64": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin-x86_64": {
+      "signature": "",
+      "url": ""
+    },
+    "linux-x86_64": {
+      "signature": "",
+      "url": ""
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ25nOVBjNGVieEZqL2JvM2x3ZFozWml4LzBabWRpd01XcDJOWmZHM2hzTmJ6QzdHK003aDd0ZEVJMlpISjM0ZkpOaWlZWjhkNFh3Ky9wMVVaR2c5UjA0US9VZFlkNUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0ODI4NzYyCWZpbGU6QWxleHRlY1Bhc3N3b3JkLWFkbWluXzAuMS4xOV94NjRfemgtQ04ubXNpLnppcApnVDI2N3JXU2EwaHRhcmk3aHByeTdiSXVxRDFTTC9BMGp6TDQ0eTlOL0NCMjNhU1dOdUxRNWhoS1c4WkZVU0RZMEpEeEUvdzNPKzUxYWRsSVRRTWREdz09Cg==",
+      "url": "https://github.com/A1LExX/mypassword-admin/releases/download/v0.1.19/AlextecPassword-admin_0.1.19_x64_zh-CN.msi.zip"
+    }
+  }
+}
