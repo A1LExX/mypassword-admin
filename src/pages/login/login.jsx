@@ -5,26 +5,67 @@ import { useNavigate } from 'react-router-dom';
 import { LoginNotification } from "../../notif/LoginMessage";
 import { open } from "@tauri-apps/api/shell";
 import { Notused } from "../../notif/notused";
+import { RegisterMessages } from "../../notif/registermessages";
+import axios from "axios";
+import apiConfig from "../../api/api.config";
 
 const Component = () => {
     const navigate = useNavigate();
-    function handleOnClickPresetting() {
-        //LoginNotification();
-        return navigate('/Main', { replace: true }), [navigate];
-    }
 
     function handleOnClickRegister() {
         //LoginNotification();
         return navigate('/Register', { replace: true }), [navigate];
     }
 
-    function copyrightLink(){
+    function copyrightLink() {
         open("https://alextec.icu")
     }
 
-    function notused(){
+    function notused() {
         Notused();
     }
+
+
+    const loginaxios = async (a, b) => {
+        if (a == null || b == null) {
+            RegisterMessages("请确认所有字段已填写！", "error");
+        } else {
+            var options = {
+                method: 'POST',
+                url: apiConfig.apilocation + apiConfig.login,
+                headers: { 'content-type': 'application/json' },
+                data: {
+                    username: a,
+                    password: b,
+                }
+            };
+
+            axios.request(options).then(function (response) {
+                //console.log(response.data);
+                if (response.data.code == 404) {
+                    console.log(response.data.message);
+                    RegisterMessages(response.data.message, "error");
+                }if (response.data.code == 500) {
+                    console.log(response.data);
+                    RegisterMessages("服务器内部错误！", "error");
+                }
+                if (response.data.code == 401) {
+                    console.log(response.data.message);
+                    RegisterMessages(response.data.message, "error");
+                } if (response.data.code == 200) {
+                    console.log(response.data.data);
+                    RegisterMessages(response.data.message, "ok");
+                    setTimeout(() => {
+                        navigate('/Main', { replace: true }), [navigate];
+                    }, 500);
+                }
+
+            }).catch(function (error) {
+                console.error(error);
+            });
+        }
+
+    };
 
     return (
         <div className={styles.rootSignupLogins}>
@@ -45,30 +86,36 @@ const Component = () => {
                         </div>
                     </div>
                     <div className={styles.form}>
-                        <Form className={styles.inputs}>
-                            <Form.Input
-                                label={{ text: "用户名" }}
-                                field="input"
-                                placeholder="输入用户名"
-                                style={{ width: "100%" }}
-                                fieldStyle={{ alignSelf: "stretch", padding: 0 }}
-                            />
-                            <Form.Input
-                                label={{ text: "密码" }}
-                                field="field1"
-                                placeholder="输入密码"
-                                style={{ width: "100%" }}
-                                fieldStyle={{ alignSelf: "stretch", padding: 0 }}
-                            />
-                        </Form>
-                        <div className={styles.check11}>
-                            <Checkbox type="default" onChange={()=> notused()}>记住我</Checkbox>
-                            <div className={styles.a} onClick={()=> handleOnClickRegister()}>没有账号?点我注册!</div>
-                        </div>
+                        <Form className={styles.inputs} render={({ formState, formApi, values }) => (
+                            <>
+                                <Form.Input
+                                    label={{ text: "用户名" }}
+                                    field="username"
+                                    placeholder="输入用户名"
+                                    style={{ width: "100%" }}
+                                    fieldStyle={{ alignSelf: "stretch", padding: 0 }}
+                                />
+                                <Form.Input
+                                    label={{ text: "密码" }}
+                                    field="password"
+                                    placeholder="输入密码"
+                                    style={{ width: "100%" }}
+                                    fieldStyle={{ alignSelf: "stretch", padding: 0 }}
+                                    mode="password"
+                                />
 
-                        <Button theme="solid" className={styles.button} onClick={() => handleOnClickPresetting()}>
-                            登录
-                        </Button>
+                                <div className={styles.check11}>
+                                    <Checkbox type="default" onChange={() => notused()}>记住我</Checkbox>
+                                    <div className={styles.b} onClick={() => notused()}>忘记密码</div>
+                                    <div className={styles.a} onClick={() => handleOnClickRegister()}>没有账号?点我注册!</div>
+                                </div>
+
+                                <Button theme="solid" className={styles.button} onClick={() => loginaxios(formState.values.username, formState.values.password)}>
+                                    登录
+                                </Button>
+                            </>
+                        )}>
+                        </Form>
                     </div>
                 </div>
             </div>
