@@ -32,11 +32,11 @@ const Register = () => {
         } else if (!regEmail.test(b)) {
             RegisterMessages("邮箱格式错误！", "error");
         } else if (!regUsername.test(a)) {
-            RegisterMessages("用户名格式错误！", "error");
+            RegisterMessages("用户名格式错误！4到16位（字母，数字，下划线，减号）", "error");
         } else if (c !== d) {
             RegisterMessages("两次输入密码不一致！", "error");
         } else if (!regPassword.test(c)) {
-            RegisterMessages("密码格式错误！", "error");
+            RegisterMessages("密码格式错误！最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符", "error");
         } else {
             var options = {
                 method: 'POST',

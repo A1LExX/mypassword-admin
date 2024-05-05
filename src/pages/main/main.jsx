@@ -9,6 +9,7 @@ import Subhome from "../subhome/subhone";
 import { IconSemiLogo } from '@douyinfe/semi-icons';
 import { getVersion } from '@tauri-apps/api/app';
 const appVersion = await getVersion();
+import { RegisterMessages } from "../../notif/registermessages";
 import { IconChangelog, IconCard, IconConfig, IconTreeSelect, IconForm, IconBreadcrumb, IconBanner, IconBadge, IconNotification, IconSteps, IconTree, IconTabs, IconNavigation } from '@douyinfe/semi-icons-lab';
 
 
@@ -38,8 +39,16 @@ export default function Main() {
 
 function Layout() {
   const navigate = useNavigate();
+  if(!localStorage.getItem("accessToken")){
+    RegisterMessages("未登录！请登录后再查看当前页面！", "error");
+    setTimeout(() => {
+      navigate('/', { replace: true }), [navigate];
+  }, 500);
+  }
   function handleOnClick() {
     //LoginNotification();
+    localStorage.clear();
+    console.log(localStorage);
     return navigate('/', { replace: true }), [navigate];
   }
   const username = '占位符'

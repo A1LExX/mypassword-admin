@@ -8,6 +8,7 @@ import { Notused } from "../../notif/notused";
 import { RegisterMessages } from "../../notif/registermessages";
 import axios from "axios";
 import apiConfig from "../../api/api.config";
+import { json } from "react-router-dom";
 
 const Component = () => {
     const navigate = useNavigate();
@@ -55,6 +56,11 @@ const Component = () => {
                 } if (response.data.code == 200) {
                     console.log(response.data.data);
                     RegisterMessages(response.data.message, "ok");
+                    localStorage.setItem("id",response.data.data.id);
+                    localStorage.setItem("username",response.data.data.username);
+                    localStorage.setItem("email",response.data.data.email);
+                    localStorage.setItem("accessToken",response.data.data.accessToken);
+                    console.log(localStorage);
                     setTimeout(() => {
                         navigate('/Main', { replace: true }), [navigate];
                     }, 500);
